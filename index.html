@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KALA64 — Reviving 64 Indian Arts</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand" aria-hidden="false">
+        <!-- Inline SVG logo (vintage + clean) -->
+        <svg class="logo" width="120" height="44" viewBox="0 0 360 132" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KALA64 logo">
+          <rect width="100%" height="100%" rx="8" fill="#f4e7d2"/>
+          <g transform="translate(12,18)">
+            <text x="0" y="36" font-family="Playfair Display, serif" font-weight="700" font-size="48" fill="#44211f">KALā</text>
+            <text x="210" y="36" font-family="Inter, sans-serif" font-size="36" fill="#23110f">64</text>
+            <!-- subtle underline on second 'a' -->
+            <line x1="44" y1="40" x2="78" y2="40" stroke="#c49b55" stroke-width="4" stroke-linecap="round"/>
+          </g>
+        </svg>
+
+        <span class="brand-name">KALA64 Network</span>
+      </div>
+
+      <nav class="menu" aria-label="Main">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#stats">Impact</a>
+        <a href="#testimonials">Stories</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero section reveal" aria-labelledby="hero-title">
+      <div class="hero-left">
+        <p class="eyebrow">Reviving the Chatushashti Kalas</p>
+        <h1 id="hero-title">KALA64 — Revolutionary Art Support Network</h1>
+        <p class="hero-text">
+          A cultural renaissance platform where artists learn, teach and build
+          sustainable art businesses rooted in India’s 64 traditional arts.
+        </p>
+        <div class="hero-buttons">
+          <a href="#services" class="btn primary">Explore Services</a>
+          <a href="#about" class="btn ghost">About KALA64</a>
+        </div>
+      </div>
+
+      <div class="hero-right" aria-hidden="false">
+        <!-- Inline SVG: framed painting/collage style (vintage) -->
+        <figure class="hero-frame" role="img" aria-label="Framed painting of 64 arts">
+          <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#f7e0b8"/><stop offset="1" stop-color="#c49b55"/></linearGradient>
+              <pattern id="patt" width="40" height="40" patternUnits="userSpaceOnUse">
+                <rect width="40" height="40" fill="#efe3cc"/>
+                <circle cx="20" cy="20" r="6" fill="#f1dcc0" opacity="0.6"/>
+              </pattern>
+            </defs>
+
+            <!-- frame -->
+            <rect x="30" y="20" width="1140" height="660" rx="18" fill="url(#g1)" />
+            <rect x="54" y="44" width="1088" height="612" rx="12" fill="url(#patt)" stroke="#44211f" stroke-width="6" />
+
+            <!-- small illustrative panels to suggest many mini-paintings -->
+            <g transform="translate(80,80)">
+              <!-- draw a grid of tiny panels -->
+              <g id="panels">
+                <!-- repeat 6x4 -->
+                <g>
+                  <rect x="0" y="0" width="160" height="88" rx="6" fill="#fff" stroke="#caa66e" stroke-width="2"/>
+                  <circle cx="36" cy="36" r="18" fill="#d96b4a" />
+                  <rect x="72" y="16" width="60" height="12" rx="4" fill="#6b9c6a"/>
+                  <rect x="72" y="36" width="40" height="8" rx="3" fill="#44211f" opacity="0.6"/>
+                </g>
+                <!-- clone in a grid with transforms -->
+                <use href="#panels" x="180" />
+                <use href="#panels" x="360" />
+                <use href="#panels" x="540" />
+                <use href="#panels" x="720" />
+                <use href="#panels" x="900" />
+                <g transform="translate(0,110)"><use href="#panels"/></g>
+                <g transform="translate(180,110)"><use href="#panels"/></g>
+                <g transform="translate(360,110)"><use href="#panels"/></g>
+                <g transform="translate(540,110)"><use href="#panels"/></g>
+                <g transform="translate(720,110)"><use href="#panels"/></g>
+                <g transform="translate(900,110)"><use href="#panels"/></g>
+                <g transform="translate(0,220)"><use href="#panels"/></g>
+                <g transform="translate(180,220)"><use href="#panels"/></g>
+                <g transform="translate(360,220)"><use href="#panels"/></g>
+                <g transform="translate(540,220)"><use href="#panels"/></g>
+              </g>
+            </g>
+
+            <!-- a decorative medallion -->
+            <g transform="translate(980,520) scale(0.9)">
+              <circle cx="0" cy="0" r="60" fill="#f7e0b8" stroke="#c49b55" stroke-width="6"/>
+              <path d="M-36 0 L0 -48 L36 0 L0 48Z" fill="#44211f" opacity="0.9"/>
+            </g>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section reveal" aria-labelledby="about-title">
+      <div class="about-image" aria-hidden="false">
+        <!-- Inline SVG "painting close-up" -->
+        <svg viewBox="0 0 800 500" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="About artwork">
+          <rect width="100%" height="100%" rx="14" fill="#fff7ee" stroke="#ddc4a2"/>
+          <g transform="translate(40,40)">
+            <rect width="180" height="120" rx="8" fill="#d96b4a"/>
+            <rect x="200" width="420" height="120" rx="6" fill="#f4e7d2" />
+            <circle cx="120" cy="200" r="46" fill="#83a968"/>
+            <rect x="200" y="160" width="360" height="120" rx="6" fill="#efe3cc"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="about-text">
+        <h2 id="about-title">About KALA64 Network</h2>
+        <p>
+          KALA64 is a platform dedicated to reviving the 64 traditional Indian arts
+          (Chatushashti Kalas). We connect artisans, students and artpreneurs through
+          structured learning, teaching opportunities and business support. Our aim is
+          to protect cultural heritage while helping artists earn with dignity.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services section section-dark reveal" aria-labelledby="services-title">
+      <h2 id="services-title">Our Services</h2>
+
+      <article class="service-item"><span class="service-number">01</span>
+        <div><h3>Learn Traditional Arts</h3>
+        <p>Join immersive courses, weekend intensives and online classes guided by experienced gurus and artisans.</p></div>
+      </article>
+
+      <article class="service-item"><span class="service-number">02</span>
+        <div><h3>Teach &amp; Mentor</h3>
+        <p>Share your lineage of knowledge. Host workshops, mentor students and build your own learning community.</p></div>
+      </article>
+
+      <article class="service-item"><span class="service-number">03</span>
+        <div><h3>Artpreneur Support</h3>
+        <p>Get help with branding, pricing, digital presence and sales so your art practice can become a sustainable business.</p></div>
+      </article>
+
+      <article class="service-item"><span class="service-number">04</span>
+        <div><h3>Cultural Programs &amp; Festivals</h3>
+        <p>Participate in curated showcases, exhibitions and cultural exchanges that highlight Indian arts globally.</p></div>
+      </article>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats" class="stats section reveal" aria-labelledby="stats-title">
+      <div class="stats-image" aria-hidden="false">
+        <!-- decorative image -->
+        <svg viewBox="0 0 600 420" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Artists at work">
+          <rect width="100%" height="100%" rx="14" fill="#fff7ee" stroke="#e0c27b"/>
+          <g transform="translate(30,30)">
+            <rect x="0" y="0" width="200" height="140" rx="10" fill="#f4d8b8"/>
+            <rect x="220" y="0" width="320" height="140" rx="10" fill="#eef3e8"/>
+            <rect x="0" y="160" width="540" height="190" rx="10" fill="#efe3cc"/>
+          </g>
+        </svg>
+      </div>
+      <div class="stats-text">
+        <h2 id="stats-title">Empowering Artistic Communities</h2>
+        <p>We create ecosystems for artists to thrive — from skill development to market access and long-term mentorship.</p>
+        <div class="stats-grid">
+          <div><div class="stat-number">64</div><div class="stat-label">Traditional Indian Arts</div></div>
+          <div><div class="stat-number">1000+</div><div class="stat-label">Artists Supported</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials section section-dark reveal" aria-labelledby="testi-title">
+      <h2 id="testi-title">Stories from the KALA64 Community</h2>
+
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <p>“KALA64 helped me rediscover Madhubani painting and turn a family tradition into a meaningful livelihood.”</p>
+          <div class="testimonial-meta">
+            <!-- inline avatar circle with initials -->
+            <svg width="48" height="48" viewBox="0 0 48 48" class="avatar" aria-hidden="true">
+              <circle cx="24" cy="24" r="24" fill="#d96b4a"></circle>
+              <text x="24" y="29" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#fff">R</text>
+            </svg>
+            <div><strong>Radha Devi</strong><span>Madhubani Artist</span></div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <p>“As a mentor, I finally have the tools to teach Pattachitra online and reach serious students around the world.”</p>
+          <div class="testimonial-meta">
+            <svg width="48" height="48" viewBox="0 0 48 48" class="avatar" aria-hidden="true">
+              <circle cx="24" cy="24" r="24" fill="#6b9c6a"></circle>
+              <text x="24" y="29" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#fff">A</text>
+            </svg>
+            <div><strong>Arjun Das</strong><span>Pattachitra Mentor</span></div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <p>“The business guidance from KALA64 turned my weekend workshops into a sustainable artpreneur journey.”</p>
+          <div class="testimonial-meta">
+            <svg width="48" height="48" viewBox="0 0 48 48" class="avatar" aria-hidden="true">
+              <circle cx="24" cy="24" r="24" fill="#d9b676"></circle>
+              <text x="24" y="29" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#23110f">P</text>
+            </svg>
+            <div><strong>Priya Sharma</strong><span>Artpreneur</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="blog section reveal" aria-labelledby="blog-title">
+      <div class="blog-header">
+        <h2 id="blog-title">From the KALA64 Journal</h2>
+        <a href="#" class="btn primary">View All Posts</a>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card" aria-labelledby="b1">
+          <svg width="100%" height="180" viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+            <rect width="100%" height="100%" fill="#efe3cc"></rect>
+            <g transform="translate(24,24)"><rect width="140" height="90" rx="6" fill="#d96b4a"></rect></g>
+          </svg>
+          <div class="blog-meta"><span>Jan 13, 2024</span><span>Tutorials</span></div>
+          <h3 id="b1">The Future of Indian Art: An Artpreneur Perspective</h3>
+        </article>
+
+        <article class="blog-card" aria-labelledby="b2">
+          <svg width="100%" height="180" viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+            <rect width="100%" height="100%" fill="#efe3cc"></rect>
+            <g transform="translate(24,24)"><circle cx="70" cy="48" r="40" fill="#6b9c6a"></circle></g>
+          </svg>
+          <div class="blog-meta"><span>Feb 3, 2024</span><span>Insights</span></div>
+          <h3 id="b2">Exploring Sacred Geometry in Traditional Indian Art</h3>
+        </article>
+
+        <article class="blog-card" aria-labelledby="b3">
+          <svg width="100%" height="180" viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+            <rect width="100%" height="100%" fill="#efe3cc"></rect>
+            <g transform="translate(24,24)"><rect width="260" height="120" rx="8" fill="#d9b676"></rect></g>
+          </svg>
+          <div class="blog-meta"><span>Mar 5, 2024</span><span>Stories</span></div>
+          <h3 id="b3">From Village Workshop to Global Gallery</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section reveal" aria-labelledby="contact-title">
+      <div class="contact-info">
+        <h2 id="contact-title">Work with KALA64</h2>
+        <p>Whether you want to learn, teach or build an art-based business, we’d love to hear from you. Tell us about your art form and where you are on your journey.</p>
+        <ul>
+          <li><strong>Learn:</strong> Join structured courses in traditional arts.</li>
+          <li><strong>Teach:</strong> Become a mentor and revive the guru–shishya bond.</li>
+          <li><strong>Artpreneur:</strong> Get guidance on pricing, branding and markets.</li>
+        </ul>
+      </div>
+
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <p>Our friendly team would love to hear from you.</p>
+        <form>
+          <label>First Name
+            <input type="text" placeholder="First Name">
+          </label>
+          <label>Email
+            <input type="email" placeholder="Email">
+          </label>
+          <label>Message
+            <textarea placeholder="Type your message..."></textarea>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox"> I accept the terms
+          </label>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- CHATBOT (keeps the improved JS behavior) -->
+  <button class="chatbot-toggle" id="chat-toggle">Kalā64 Guide ✨</button>
+  <div class="chatbot-panel" id="chat-panel" aria-hidden="true">
+    <div class="chatbot-header">
+      <span>Kalā64 Guide</span>
+      <button id="chat-close" aria-label="Close chatbot">×</button>
+    </div>
+    <div class="chatbot-body">
+      <div id="chat-messages" class="chat-messages">
+        <div class="bot-msg">Namaste 👋 I’m the Kalā64 guide. Type <strong>help</strong> or describe your interests and I’ll suggest Kalās and next steps.</div>
+      </div>
+      <div class="chat-input-row">
+        <input id="chat-input" type="text" placeholder="Type your question...">
+        <button id="chat-send">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h3>KALA64</h3>
+        <p>KALA64: Reviving 64 Indian arts through a Learn–Teach–Artpreneur ecosystem, blending heritage with modern opportunities.</p>
+        <form class="subscribe">
+          <input type="email" placeholder="Enter your email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact Info</h4>
+        <p>Bengaluru, India</p>
+        <p>+91 98765 00000</p>
+        <p>hello@kala64.example</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
